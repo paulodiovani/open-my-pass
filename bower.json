@@ -1,0 +1,30 @@
+{
+  "name": "my-pass",
+  "version": "0.0.0",
+  "authors": [
+    "Paulo Diovani Gonçalves <paulo@diovani.com>"
+  ],
+  "description": "Password generator and manager, based on OpenPGP.js",
+  "main": "index.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "openpgp",
+    "gpg",
+    "password"
+  ],
+  "license": "GPL v2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "openpgp": "https://github.com/openpgpjs/openpgpjs/releases/download/v0.6.0/openpgp.min.js",
+    "openpgp-worker": "https://github.com/openpgpjs/openpgpjs/releases/download/v0.6.0/openpgp.worker.min.js",
+    "requirejs": "~2.1.14"
+  }
+}
