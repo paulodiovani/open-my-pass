@@ -10,7 +10,7 @@ requirejs.config
 describe "require.js", ->
   it "should exists", ->
     assert.ok requirejs?
-    
+
   it "should load OpenPGP from lib/ folder", (done) ->
     requirejs ["../public/js/lib/openpgp/index"], (openpgp) ->
       done() if openpgp?

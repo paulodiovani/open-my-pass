@@ -2,10 +2,7 @@
   "name": "my-pass",
   "version": "0.0.0",
   "description": "Password generator and manager, based on OpenPGP.js",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
+  "main": "public/js/my-pass.js",
   "scripts": {
     "test": "mocha --reporter spec --compilers coffee:coffee-script/register"
   },
@@ -14,7 +11,7 @@
     "gpg",
     "password"
   ],
-  "author": "Paulo Diovani",
+  "author": "Paulo Diovani Gonçalves <paulo@diovani.com>",
   "license": "GPL v2",
   "dependencies": {},
   "devDependencies": {

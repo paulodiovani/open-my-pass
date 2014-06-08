@@ -16,12 +16,13 @@ module.exports = (grunt) ->
 
       test:
         files: ['test/*.coffee']
-        tasks: ['mochaTest:test']
+        tasks: ['coffeelint:tests', 'mochaTest:test']
 
     # Check for syntax
     coffeelint:
       gruntfile: ['Gruntfile.coffee']
       sources: ['src/**/*.coffee']
+      tests: ['test/*.coffee']
       options:
         configFile: 'coffeelint.json'
 
@@ -35,7 +36,7 @@ module.exports = (grunt) ->
         dest: './public/js/'
         ext: '.js'
 
-    # Mocha tests
+    # Run Mocha tests
     mochaTest:
       options:
         reporter: 'spec'
@@ -51,11 +52,8 @@ module.exports = (grunt) ->
 
   # default task(s)
   grunt.registerTask 'default', [
-    'coffeelint:gruntfile', 'coffeelint:sources'
+    'coffeelint:gruntfile', 'coffeelint:sources', 'coffeelint:tests'
     'coffee:browser'
     'mochaTest:test'
     'watch'
   ]
-
-  # don't return nothing
-  return
