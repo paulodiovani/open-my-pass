@@ -1,4 +1,4 @@
-# My pass
+# My pass [![Build Status](https://travis-ci.org/paulodiovani/open-my-pass.svg?branch=master)](https://travis-ci.org/paulodiovani/open-my-pass)
 
 A password manager for browsers, using [OpenPGP.js](http://openpgpjs.org/).
 
