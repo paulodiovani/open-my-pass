@@ -4,7 +4,7 @@
   "description": "Password generator and manager, based on OpenPGP.js",
   "main": "public/js/my-pass.js",
   "scripts": {
-    "test": "mocha --reporter spec --compilers coffee:coffee-script/register"
+    "test": "grunt test"
   },
   "keywords": [
     "openpgp",

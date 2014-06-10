@@ -57,3 +57,10 @@ module.exports = (grunt) ->
     'mochaTest:test'
     'watch'
   ]
+
+  # test, after lint and compile
+  grunt.registerTask 'test', [
+    'coffeelint:gruntfile', 'coffeelint:sources', 'coffeelint:tests'
+    'coffee:browser'
+    'mochaTest:test'
+  ]
