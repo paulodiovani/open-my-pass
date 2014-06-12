@@ -29,6 +29,8 @@ module.exports = (grunt) ->
     # Compile files
     coffee:
       browser:
+        options:
+          bare: false
         expand: true
         flatten: false
         cwd: 'src/'
